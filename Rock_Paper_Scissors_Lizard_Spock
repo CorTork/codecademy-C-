@@ -1,0 +1,104 @@
+/* Play rock, paper, scissors, lizard, Spock with a PC.
+Rock crushes scissors and lizard
+Paper covers rock and disproves Spock
+Scissors cuts paper and decapitates lizard
+Lizard poisons Spock and eats paper
+Spock crushes scissors and vaporizes rock */
+
+#include <iostream>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+
+
+  srand (time(NULL));
+  
+  int computer = rand() % 5 + 1;
+  
+  int user = 0;
+  
+
+
+std::cout << "=====================================\n";
+std::cout << "Rock, Paper, Scissors, Lizard, Spock!\n";
+std::cout << "=====================================\n";
+
+std::cout << "1) ✊\n";
+std::cout << "2) ✋\n";
+std::cout << "3) ✌\n";
+std::cout << "4) 🤏\n";
+std::cout << "5) 🖖\n";
+
+std::cout << "SHOOT!\n";
+
+std::cin >> user; 
+  
+if (user == computer) {
+  std::cout << computer << "\n";
+  std::cout << "Tie!\n";
+}
+  
+else if (user == 1) {
+  if (computer == 3) {
+    std::cout << computer << "\n";
+    std::cout << "You Win!\n";
+  }
+  if (computer == 4) {
+    std::cout << computer << "\n";
+    std::cout << "You Win!\n";
+  }
+}
+
+else if (user == 2) {
+  if (computer == 1) {
+    std::cout << computer << "\n";
+    std::cout << "You Win!\n";
+  }
+  if (computer == 5) {
+    std::cout << computer << "\n";
+    std::cout << "You Win!\n";
+  }
+}
+  
+else if (user == 3) {
+  if (computer == 2) {
+    std::cout << computer << "\n";
+    std::cout << "You Win!\n";
+  }
+  if (computer == 4) {
+    std::cout << computer << "\n";
+    std::cout << "You Win!\n";
+  }
+}
+
+else if (user == 4) {
+  if (computer == 2) {
+    std::cout << computer << "\n";
+    std::cout << "You Win!\n";
+  }
+  if (computer == 5) {
+    std::cout << computer << "\n";
+    std::cout << "You Win!\n";
+  }
+}
+  
+else if (user == 5) {
+  if (computer == 1) {
+    std::cout << computer << "\n";
+    std::cout << "You Win!\n";
+  }
+  if (computer == 3) {
+    std::cout << computer << "\n";
+    std::cout << "You Win!\n";
+  }
+}
+
+else {
+  std::cout << computer << "\n";
+  std::cout << "Computer Wins!\n";
+}
+  
+
+  
+}
