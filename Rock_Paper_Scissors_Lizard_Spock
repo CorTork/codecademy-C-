@@ -40,65 +40,60 @@ if (user == computer) {
 }
   
 else if (user == 1) {
-  if (computer == 3) {
+  if (computer == 3 or computer == 4) {
     std::cout << computer << "\n";
     std::cout << "You Win!\n";
   }
-  if (computer == 4) {
+  if (computer == 2 or computer == 5) {
     std::cout << computer << "\n";
-    std::cout << "You Win!\n";
+    std::cout << "You Lose!\n";
   }
 }
 
 else if (user == 2) {
-  if (computer == 1) {
+  if (computer == 1 or computer == 5) {
     std::cout << computer << "\n";
     std::cout << "You Win!\n";
   }
-  if (computer == 5) {
+  if (computer == 3 or computer == 4) {
     std::cout << computer << "\n";
-    std::cout << "You Win!\n";
+    std::cout << "You Lose!\n";
   }
 }
   
 else if (user == 3) {
-  if (computer == 2) {
+  if (computer == 2 or computer == 4) {
     std::cout << computer << "\n";
     std::cout << "You Win!\n";
   }
-  if (computer == 4) {
+  if (computer == 1 or computer == 5) {
     std::cout << computer << "\n";
-    std::cout << "You Win!\n";
+    std::cout << "You Lose!\n";
   }
 }
 
 else if (user == 4) {
-  if (computer == 2) {
+  if (computer == 2 or computer == 5) {
     std::cout << computer << "\n";
     std::cout << "You Win!\n";
   }
-  if (computer == 5) {
+  if (computer == 1 or computer == 3) {
     std::cout << computer << "\n";
-    std::cout << "You Win!\n";
+    std::cout << "You Lose!\n";
   }
 }
   
 else if (user == 5) {
-  if (computer == 1) {
+  if (computer == 1 or computer == 3) {
     std::cout << computer << "\n";
     std::cout << "You Win!\n";
   }
-  if (computer == 3) {
+  if (computer == 2 or computer == 4) {
     std::cout << computer << "\n";
-    std::cout << "You Win!\n";
+    std::cout << "You Lose!\n";
   }
 }
-
-else {
-  std::cout << computer << "\n";
-  std::cout << "Computer Wins!\n";
-}
-  
+ 
 
   
 }
